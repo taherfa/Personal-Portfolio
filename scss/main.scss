@@ -1,0 +1,124 @@
+// Imports
+@import "config";
+@import "utilities";
+// General Styles
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  background: $light-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Manrope", sans-serif;
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+// Navbar
+
+header div.container {
+  background-color: $showcase-color;
+  padding: 0.75rem 0;
+
+  #main-nav {
+    width: 60%;
+    margin: auto;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    a {
+      text-decoration: none;
+      color: $light-color;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $main-color;
+      }
+
+      &.current {
+        border-color: $main-color;
+      }
+    }
+  }
+}
+
+// Showcase
+
+header div#showcase {
+  background-color: $showcase-color;
+  padding-top: 15rem;
+  height: 100vh;
+  color: $light-color;
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-weight: 300;
+      letter-spacing: 0.3rem;
+      padding: 1rem;
+    }
+
+    p {
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+    }
+
+    ul {
+      width: 15rem;
+      display: flex;
+      justify-content: space-between;
+      margin: 2rem;
+
+      i {
+        color: $light-color;
+      }
+
+      i:hover {
+        color: $main-color;
+      }
+    }
+
+    .showcase-buttons {
+      a {
+        width: 11rem;
+        text-align: center;
+      }
+      a:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+#about-me {
+  display: none;
+}

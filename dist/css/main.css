@@ -1,0 +1,100 @@
+.btn-main, .btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer; }
+
+.btn-main {
+  color: #f4f4f4;
+  background-color: #d80000; }
+
+.btn-light {
+  color: #d80000;
+  background-color: #f4f4f4;
+  border-color: #d80000; }
+
+.btn-dark {
+  color: #f4f4f4;
+  background-color: #333; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Manrope", sans-serif;
+  text-transform: uppercase; }
+
+img {
+  width: 100%; }
+
+header div.container {
+  background-color: #191919;
+  padding: 0.75rem 0; }
+  header div.container #main-nav {
+    width: 60%;
+    margin: auto; }
+    header div.container #main-nav ul {
+      display: flex;
+      justify-content: space-between; }
+    header div.container #main-nav a {
+      text-decoration: none;
+      color: #f4f4f4;
+      font-weight: bold;
+      text-transform: uppercase; }
+      header div.container #main-nav a:hover {
+        color: #d80000; }
+      header div.container #main-nav a.current {
+        border-color: #d80000; }
+
+header div#showcase {
+  background-color: #191919;
+  padding-top: 15rem;
+  height: 100vh;
+  color: #f4f4f4; }
+  header div#showcase .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    header div#showcase .header-content h1 {
+      font-weight: 300;
+      letter-spacing: 0.3rem;
+      padding: 1rem; }
+    header div#showcase .header-content p {
+      text-transform: uppercase;
+      letter-spacing: 0.1rem; }
+    header div#showcase .header-content ul {
+      width: 15rem;
+      display: flex;
+      justify-content: space-between;
+      margin: 2rem; }
+      header div#showcase .header-content ul i {
+        color: #f4f4f4; }
+      header div#showcase .header-content ul i:hover {
+        color: #d80000; }
+    header div#showcase .header-content .showcase-buttons a {
+      width: 11rem;
+      text-align: center; }
+    header div#showcase .header-content .showcase-buttons a:hover {
+      opacity: 0.7; }
+
+#about-me {
+  display: none; }
