@@ -26,3 +26,17 @@
     background-color: $dark-color;
   }
 }
+
+.bottom-line {
+  height: 2px;
+  width: 6rem;
+  background: $main-color;
+  display: block;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
