@@ -30,6 +30,9 @@
   flex-direction: column;
   align-items: flex-start; }
 
+.red-bullet {
+  color: #d80000; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -111,16 +114,22 @@ header div#showcase {
       opacity: 0.7; }
 
 section#about {
-  background-color: white; }
-  section#about .about-content {
+  background-color: #ffffff; }
+  section#about .about-all {
+    display: flex;
     width: 90%;
-    margin: auto;
-    padding: 3rem 0; }
-    section#about .about-content .title {
-      margin: 2rem 0; }
-      section#about .about-content .title h1 {
-        font-weight: 800px;
-        font-size: 2.5rem; }
+    margin: auto; }
+    section#about .about-all .about-content {
+      width: 90%;
+      margin: auto;
+      padding: 3rem 0; }
+      section#about .about-all .about-content .title {
+        margin: 2rem 0; }
+        section#about .about-all .about-content .title h1 {
+          font-weight: 800px;
+          font-size: 2.5rem; }
+    section#about .about-all .about-image {
+      padding: 3rem 0 3rem 3rem; }
 
 section#skills {
   background-color: #f4f4f4; }
@@ -136,4 +145,42 @@ section#skills {
     section#skills .skills-content .skills-boxes {
       display: grid;
       grid-gap: 1rem;
-      grid-template-columns: repeat(4, 1fr); }
+      grid-template-columns: repeat(4, 1fr);
+      line-height: 2rem; }
+      section#skills .skills-content .skills-boxes h2 {
+        padding-bottom: 0.75rem; }
+
+section#projects {
+  background-color: #ffffff; }
+  section#projects .projects-content {
+    width: 90%;
+    margin: auto;
+    padding: 3rem 0; }
+    section#projects .projects-content .title {
+      margin: 2rem 0; }
+      section#projects .projects-content .title h1 {
+        font-weight: 800px;
+        font-size: 2.5rem; }
+    section#projects .projects-content .project-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 4rem;
+      padding-left: 3rem; }
+      section#projects .projects-content .project-cards .project-card {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        background-color: #f4f4f4;
+        text-align: center;
+        box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3); }
+        section#projects .projects-content .project-cards .project-card h3 {
+          padding-top: 1rem; }
+        section#projects .projects-content .project-cards .project-card .project-img {
+          padding: 1rem 0; }
+        section#projects .projects-content .project-cards .project-card p.project-description {
+          padding: 1rem 1rem 0rem 1rem; }
+        section#projects .projects-content .project-cards .project-card p.project-skills {
+          padding-bottom: 1rem;
+          color: grey; }
