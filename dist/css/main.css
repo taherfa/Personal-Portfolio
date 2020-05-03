@@ -165,7 +165,8 @@ section#projects {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 4rem;
-      padding-left: 3rem; }
+      padding-left: 3rem;
+      padding-bottom: 2rem; }
       section#projects .projects-content .project-cards .project-card {
         border-radius: 1rem;
         display: flex;
