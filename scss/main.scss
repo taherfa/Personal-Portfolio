@@ -172,9 +172,11 @@ section#skills {
     }
 
     .skills-boxes {
-      display: grid;
-      grid-gap: 1rem;
-      grid-template-columns: repeat(4, 1fr);
+      display: flex;
+      // grid-gap: 1rem;
+      // grid-template-columns: repeat(4, 1fr);
+      width: 90%;
+      justify-content: space-between;
       line-height: 2rem;
 
       h2 {
@@ -194,7 +196,7 @@ section#projects {
     padding: 3rem 0;
 
     .title {
-      margin: 2rem 0;
+      margin: 2rem 0 4rem 0;
 
       h1 {
         font-weight: 800px;
@@ -209,6 +211,7 @@ section#projects {
       padding-left: 3rem;
 
       .project-card {
+        border-radius: 1rem;
         display: flex;
         flex-direction: column;
         width: 90%;
@@ -233,6 +236,47 @@ section#projects {
         p.project-skills {
           padding-bottom: 1rem;
           color: grey;
+        }
+      }
+    }
+  }
+}
+
+// Footer Section
+#footer-section {
+  background: $dark-color;
+  height: 15rem;
+
+  .footer-content {
+    display: flex;
+    margin: auto;
+    width: 70%;
+    justify-content: space-between;
+    padding-top: 3rem;
+
+    .left-side {
+      color: $light-color;
+    }
+
+    .right-side {
+      .social-links ul {
+        display: flex;
+
+        li {
+          padding-right: 1rem;
+
+          a {
+            text-decoration: none;
+            color: $light-color;
+
+            &:hover {
+              color: $main-color;
+            }
+
+            &.current {
+              border-color: $main-color;
+            }
+          }
         }
       }
     }
