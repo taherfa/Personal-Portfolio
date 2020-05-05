@@ -33,6 +33,16 @@
 .red-bullet {
   color: #d80000; }
 
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -62,6 +72,11 @@ h6 {
 img {
   width: 100%; }
 
+#navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%; }
+
 header div.container {
   background-color: #191919;
   padding: 0.75rem 0; }
@@ -83,7 +98,7 @@ header div.container {
 
 header div#showcase {
   background-color: #191919;
-  padding-top: 15rem;
+  padding-top: 17rem;
   height: 100vh;
   color: #f5f5f5; }
   header div#showcase .header-content {
@@ -198,6 +213,8 @@ section#projects {
     padding-top: 4.5rem; }
     #footer-section .footer-content .left-side {
       color: #f5f5f5; }
+      #footer-section .footer-content .left-side .copyright {
+        color: grey; }
     #footer-section .footer-content .right-side .social-links ul {
       display: flex; }
       #footer-section .footer-content .right-side .social-links ul li {

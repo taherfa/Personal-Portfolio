@@ -37,6 +37,12 @@ img {
   width: 100%;
 }
 
+#navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
 // Navbar
 
 header div.container {
@@ -73,7 +79,7 @@ header div.container {
 
 header div#showcase {
   background-color: $showcase-color;
-  padding-top: 15rem;
+  padding-top: 17rem;
   height: 100vh;
   color: $light-color;
 
@@ -257,6 +263,10 @@ section#projects {
 
     .left-side {
       color: $light-color;
+
+      .copyright {
+        color: grey;
+      }
     }
 
     .right-side {
