@@ -261,6 +261,11 @@ section#projects {
     justify-content: space-between;
     padding-top: 4.5rem;
 
+    a {
+      text-decoration: none;
+      color: $light-color !important;
+    }
+
     .left-side {
       color: $light-color;
 
