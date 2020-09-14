@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <script src="https://kit.fontawesome.com/4170a75a7d.js" crossorigin="anonymous"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;800&family=Montserrat:wght@500&display=swap"
         rel="stylesheet">
-    <title>Taher Ankleshwaria | Full Stack Developer</title>
+    <title>Taher Ankleshwaria</title>
 </head>
 
 <body>
+    <div class="responsive-toggle">
+        <h4>Please view on a desktop.</h4>
+    </div>
     <header id="home-header">
         <div id="navbar" class="container">
             <nav id="main-nav">
@@ -22,6 +26,7 @@
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#footer-section">Contact</a></li>
+                    <li><a href="img/Resume.pdf">Resume</a></li>
                 </ul>
             </nav>
         </div>
@@ -30,13 +35,15 @@
                 <h1>Taher Ankleshwaria</h1>
                 <p>Computer Science Student @UBC</p>
                 <ul>
-                    <li><a target="_blank" href="https://twitter.com/taherfa_"><i class="fab fa-twitter fa-2x"></i></a>
+                    <li><a rel="noopener noreferrer" target="_blank" href="https://twitter.com/taherfa_"><i
+                                class="fab fa-twitter fa-2x"></i></a>
                     </li>
-                    <li><a target="_blank" href="https://github.com/taherfa"><i class="fab fa-github fa-2x"></i></i></a>
+                    <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/taherfa"><i
+                                class="fab fa-github fa-2x"></i></a>
                     </li>
-                    <li><a target="_blank" href="https://www.linkedin.com/in/taherfa/"><i
+                    <li><a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/taherfa/"><i
                                 class="fab fa-linkedin-in fa-2x"></i></a></li>
-                    <li><a target="_blank" href="#"><i class="far fa-file fa-2x"></i></a></li>
+                    <li><a target="_blank" href="img/Resume.pdf"><i class="far fa-file fa-2x"></i></a></li>
                 </ul>
                 <div class="showcase-buttons">
                     <a target="_blank" href="mailto:t.ankleshwaria@gmail.com" class="btn-main">Get In Touch</a>
@@ -53,12 +60,32 @@
                     <h1>About Me</h1>
                     <div class="bottom-line"></div>
                 </div>
-                <p>I am based in Vancouver and currently attending the University of British Columbia as a second year
-                    computer science student.</p>
+                <p>Hello! I'm Taher, a second year Computer Science student at the University of British Columbia in
+                    Vancouver.</p>
                 <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt error consectetur odit obcaecati totam magni minus nobis earum! Necessitatibus minima earum optio totam nostrum, alias ipsum odio soluta atque voluptas delectus dolore veritatis numquam nam nobis consectetur voluptatem nihil vel, eligendi quod et quasi? Recusandae id blanditiis perferendis ex incidunt!</p>
+                <p>
+                    As a child, I always enjoyed toying with computers and customizing software to look cool or provide
+                    some extra functionality. This was never anything complicated, mostly just playing around with
+                    internal settings or jailbreaking my iOS devices, but technology always intrugured me and finding
+                    ways to make it different or better was my favourite part.
+                </p>
                 <br>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam veritatis recusandae molestias doloribus laboriosam quis.</p>
+                <!-- <p>After my first year at UBC, I decided that software was where I wanted to spend my time. Not only did
+                    it seem like the natural choice for me, but I had also recognized the massive potential for positive
+                    change that technology provides. Change that I would like to be a part of.</p>
+                <br> -->
+                <p>Through personal projects and a startup I co-founded (https://www.getdime.ca/), I've gained
+                    experience in mobile development, full stack web development and certain aspects of product
+                    management. I'm always learning and I'm currently exploring the field of Machine Learning and its
+                    applications.
+                </p>
+                <br>
+                <p>Outside of work I enjoy reading, running and talking with friends over food.
+                    I also love meeting new people so whether you would like to work together on something or simply
+                    grab a coffee, feel
+                    free to reach out!</p>
+                <br><br>
+                <a href="img/Resume.pdf" class="btn btn-outline">Resume</a>
             </div>
             <div class="about-image">
                 <img src="./img/vancouver.jpg" style="width:30rem; height:45rem;" alt="Vancouver">
@@ -77,32 +104,30 @@
                     <h2>Languages</h2>
                     <p><span class="red-bullet">∙</span> Python</p>
                     <p><span class="red-bullet">∙</span> Java</p>
-                    <p><span class="red-bullet">∙</span> HTML</p>
-                    <p><span class="red-bullet">∙</span> CSS</p>
+                    <p><span class="red-bullet">∙</span> C++</p>
                     <p><span class="red-bullet">∙</span> Javascript</p>
-                    <p><span class="red-bullet">∙</span> PHP</p>
+                    <p><span class="red-bullet">∙</span> HTML / CSS</p>
+                    <p><span class="red-bullet">∙</span> SQL</p>
+                    <p><span class="red-bullet">∙</span> JSON</p>
                 </div>
                 <div class="skill-box">
                     <h2>Front End</h2>
-                    <p><span class="red-bullet">∙</span> Bootstrap</p>
-                    <p><span class="red-bullet">∙</span> Sass</p>
                     <p><span class="red-bullet">∙</span> React</p>
+                    <p><span class="red-bullet">∙</span> Bootstrap</p>
                     <p><span class="red-bullet">∙</span> JQuery</p>
+                    <p><span class="red-bullet">∙</span> Sass</p>
                 </div>
                 <div class="skill-box">
                     <h2>Back End</h2>
                     <p><span class="red-bullet">∙</span> Node</p>
                     <p><span class="red-bullet">∙</span> Express</p>
-                    <p><span class="red-bullet">∙</span> SQL</p>
+                    <p><span class="red-bullet">∙</span> PostgreSQL</p>
                     <p><span class="red-bullet">∙</span> MondoDB</p>
-                    <p><span class="red-bullet">∙</span> PHP</p>
                 </div>
                 <div class="skill-box">
                     <h2>Other</h2>
                     <p><span class="red-bullet">∙</span> Git</p>
                     <p><span class="red-bullet">∙</span> Linux</p>
-                    <p><span class="red-bullet">∙</span> HTTP</p>
-                    <p><span class="red-bullet">∙</span> SEO</p>
                 </div>
             </div>
         </div>
@@ -116,60 +141,98 @@
             </div>
             <div class="project-cards">
                 <div class="project-card">
-                    <h3>Sort Algorithm Visualizer</h3>
                     <div class="project-img">
-                        <img src="./img/sort.png" style="width:25rem; height:15rem;" alt="">
+                        <img src="./img/HappyHourLocator.png" style="width:25rem; height:18rem;" alt="">
                     </div>
-                    <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Voluptatibus fugit culpa officiis omnis
-                        commodi quasi explicabo quos temporibus cumque? Cupiditate.</p>
-                    <br>
-                    <p class="project-skills"> HTML <span class="red-bullet">∙</span> CSS <span
-                            class="red-bullet">∙</span> Javascript <span class="red-bullet">∙</span> React <span
-                            class="red-bullet">∙</span> Sass
-                    </p>
+                    <div class="project-info">
+                        <h3>Happy Hour Locator</h3>
+                        <p class="project-skills"> React <span class="red-bullet">∙</span> Node <span
+                                class="red-bullet">∙</span> Express <span class="red-bullet">∙</span> PostgreSQL <span
+                                class="red-bullet">∙</span> RESTful API
+                        </p>
+                        <br>
+                        <p class="project-description">
+                            Full stack web application that acts as a visual CRUD database of happy hour events around
+                            Vancouver.
+                        </p>
+                        <a rel="noopener noreferrer" target="_blank"
+                            href="https://github.com/taherfa/Happy-Hour-Web-App">
+                            <div class="project-buttons">
+                                <i class="fab fa-github fa-2x"></i>
+                                <p>View on Github</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div class="project-card">
-                    <h3>Sort Algorithm Visualizer</h3>
                     <div class="project-img">
-                        <img src="./img/sort.png" style="width:25rem; height:15rem;" alt="">
+                        <img src="./img/snake.png" style="width:25rem; height:18rem;" alt="">
                     </div>
-                    <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Voluptatibus fugit culpa officiis omnis
-                        commodi quasi explicabo quos temporibus cumque? Cupiditate.</p>
-                    <br>
-                    <p class="project-skills"> HTML <span class="red-bullet">∙</span> CSS <span
-                            class="red-bullet">∙</span> Javascript <span class="red-bullet">∙</span> React <span
-                            class="red-bullet">∙</span> Sass
-                    </p>
+                    <div class="project-info">
+                        <h3>AI Snake Game</h3>
+                        <p class="project-skills"> Python <span class="red-bullet">∙</span> Pygame <span
+                                class="red-bullet">∙</span> OOP <span class="red-bullet">∙</span> Search Algorithms</p>
+                        <br>
+                        <p class="project-description">
+                            Snake game programmed to use either a breadth-first search or an A* algorithm to find the
+                            shortest possible path between its
+                            head and the food while considering the surrounding obstacles
+                        </p>
+                        <a rel="noopener noreferrer" target="_blank"
+                            href="https://github.com/taherfa/Happy-Hour-Web-App">
+                            <div class="project-buttons">
+                                <i class="fab fa-github fa-2x"></i>
+                                <p>View on Github</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div class="project-card">
-                    <h3>Sort Algorithm Visualizer</h3>
                     <div class="project-img">
-                        <img src="./img/sort.png" style="width:25rem; height:15rem;" alt="">
+                        <img src="./img/dime.png" style="width:25rem; height:18rem;" alt="">
                     </div>
-                    <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Voluptatibus fugit culpa officiis omnis
-                        commodi quasi explicabo quos temporibus cumque? Cupiditate.</p>
-                    <br>
-                    <p class="project-skills"> HTML <span class="red-bullet">∙</span> CSS <span
-                            class="red-bullet">∙</span> Javascript <span class="red-bullet">∙</span> React <span
-                            class="red-bullet">∙</span> Sass
-                    </p>
+                    <div class="project-info">
+                        <h3>Dime - The New App on Campus</h3>
+                        <p class="project-skills"> Dart <span class="red-bullet">∙</span> Flutter <span
+                                class="red-bullet">∙</span> UI/UX Design <span class="red-bullet">∙</span> Agile <span
+                                class="red-bullet">∙</span> Startup
+                        </p>
+                        <br>
+                        <p class="project-description">
+                            As co-founder and lead front-end developer, I tackled the design, development and
+                            maintenance of a social media app centered around students and campus life through features
+                            like messaging, reddit style channels, a “people around you” feature and our special social
+                            cards
+                        </p>
+                        <a rel="noopener noreferrer" target="_blank" href="https://www.getdime.ca/">
+                            <div class="project-buttons">
+                                <i class="fas fa-globe fa-2x"></i>
+                                <p>Link to Website</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div class="project-card">
-                    <h3>Sort Algorithm Visualizer</h3>
                     <div class="project-img">
-                        <img src="./img/pathfind.png" style="width:25rem; height:15rem;" alt="">
+                        <img src="./img/JavaApp.png" style="width:25rem; height:18rem;" alt="">
                     </div>
-                    <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Voluptatibus fugit culpa officiis omnis
-                        commodi quasi explicabo quos temporibus cumque? Cupiditate.</p>
-                    <br>
-                    <p class="project-skills"> HTML <span class="red-bullet">∙</span> CSS <span
-                            class="red-bullet">∙</span> Javascript <span class="red-bullet">∙</span> React <span
-                            class="red-bullet">∙</span> Sass
-                    </p>
+                    <div class="project-info">
+                        <h3>Personal Budgeting Manager</h3>
+                        <p class="project-skills"> Java <span class="red-bullet">∙</span> OOP <span
+                                class="red-bullet">∙</span> JUnit Testing <span class="red-bullet">∙</span> Swing Toolkit
+                        </p>
+                        <br>
+                        <p class="project-description">
+                            Developed an object oriented solution, using the observer design pattern, to tracking a user’s spending. Users are able to
+                            create multiple categories with assigned monthly budgets to organize their purchases into. Tested with JUnit and GUI developed using Swing.
+                        </p>
+                        <a href="img/JavaApp.png">
+                            <div class="project-buttons">
+                                <i class="fab fa-github fa-2x"></i>
+                                <p>Github is Private</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -190,11 +253,14 @@
             <div class="right-side">
                 <div class="social-links">
                     <ul>
-                        <li><a target="_blank" href="https://www.facebook.com/t.ankleshwaria">Facebook</a></li>
+                        <li><a rel="noopener noreferrer" target="_blank"
+                                href="https://www.github.com/taherfa">Github</a></li>
                         <li><span class="red-bullet">∙</span></li>
-                        <li><a target="_blank" href="https://www.linkedin.com/in/taherfa/">LinkedIn</a></li>
+                        <li><a rel="noopener noreferrer" target="_blank"
+                                href="https://www.linkedin.com/in/taherfa/">LinkedIn</a></li>
                         <li><span class="red-bullet">∙</span></li>
-                        <li><a target="_blank" href="https://twitter.com/taherfa_">Twitter</a></li>
+                        <li><a rel="noopener noreferrer" target="_blank" href="https://twitter.com/taherfa_">Twitter</a>
+                        </li>
                     </ul>
                 </div>
             </div>
