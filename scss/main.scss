@@ -1,8 +1,13 @@
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-html {
+html,
+body {
 	scroll-behavior: smooth;
   }
+
+.smallscreen {
+	display: none;
+}
 
 .btn-main {
 	display: inline-block;
@@ -345,22 +350,93 @@ section#projects {
 	}
 }
 
-@media only screen and (max-width: 1069px) {
-    
-  .smallscreen{
-      height:100%;
-      width:100%;
-      position:fixed;
-      z-index:10000;
-	  background-color: #333;
-      text-align: center;
-	  font-family: Oxygen;
-	  
-	  h2 {
-		color: #f5f5f5;
-		margin-top: 30vh;
-	  }
+@media only screen and (max-width: 1097px) {
 
-  }
+	.image-toggle{
+		display: none;
+	}
 
+	section#projects {
+		.projects-content {
+			.project-cards {
+				.project-card {
+					width: 60%;
+					.project-info {
+						margin-top: 2rem;
+						margin-bottom: 2rem;
+					}
+				}
+			}
+		}
+	}
+
+	#footer-section {
+		.footer-content{
+			width: 80%;
+		}
+	}
+}
+
+@media only screen and (max-width: 859px) {
+
+	header{
+		div.container{
+			#main-nav{
+				width: 70%;
+			}
+		}
+	}
+
+	#footer-section{
+		.footer-content{
+			display: flexbox;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			.left-side{
+				.copyright-left-toggle{
+					display: none;
+				}
+			}
+
+			.right-side{
+				margin-top: -1rem;
+				.social-links{
+					width: 90%;
+					margin: auto;
+				}
+
+				p {
+					color: grey;
+					margin-top: 1rem;
+				}
+				.copyright-right-toggle{
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 696px) {
+	.smallscreen{
+		display: block;
+		height:100%;
+		width:100%;
+		position:fixed;
+		z-index:10000;
+		background-color: #333;
+		text-align: center;
+		background-image: url("/dist/img/comingsoon.jpg");
+		background-position: center; /* Center the image */
+		background-repeat: no-repeat; /* Do not repeat the image */
+		background-size: cover;
+		
+		h2 {
+		  color: #f5f5f5;
+		  margin-top: 5vh;
+		}
+  
+	}
 }
