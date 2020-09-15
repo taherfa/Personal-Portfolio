@@ -6,7 +6,7 @@
   <p align="center">
   A more personal look into myself and my work.
     <br />
-      <a href="https://taherfa.netlify.app/"><strong>Hosted on Netlify</strong></a>
+      <a targer="blank_" href="https://taherfa.netlify.app/"><strong>Hosted on Netlify</strong></a>
   </p>
 </p>
 
